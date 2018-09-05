@@ -50,6 +50,20 @@
    }
    intro {font-size: 32px;}
   </style>
+
+  <!-- Fix navbar menu that doesn't collapse when an internal link is clicked.
+       https://github.com/twbs/bootstrap/issues/9013#issuecomment-22059510
+       https://github.com/twbs/bootstrap/issues/12852
+       Used the following solution:
+       https://github.com/twbs/bootstrap/issues/9013#issuecomment-23590508
+  -->
+  <script>
+    $(document).on('click','.navbar-collapse.in',function(e) {
+      if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+      }
+    });
+  </script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
