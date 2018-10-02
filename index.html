@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125179898-1"></script>
@@ -17,10 +18,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/brands.css" integrity="sha384-VGCZwiSnlHXYDojsRqeMn3IVvdzTx5JEuHgqZ3bYLCLUBV8rvihHApoA1Aso2TZA" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/fontawesome.css" integrity="sha384-GVa9GOgVQgOk+TNYXu7S/InPTfSDTtBalSgkgqQ7sCik56N9ztlkoTr2f/T44oKV" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/fontawesome.css" integrity="sha384-GVa9GOgVQgOk+TNYXu7S/InPTfSDTtBalSgkgqQ7sCik56N9ztlkoTr2f/T44oKV" crossorigin="anonymous">
 
   <style>
-   .navbar {
+    .navbar {
       font-size: 16px;
     }
     /* Hover text in navbar is purple */
@@ -47,8 +48,8 @@
     }
     p {
       font-size: 16px;
-   }
-   intro {font-size: 32px;}
+    }
+    intro {font-size: 32px;}
   </style>
 
   <!-- Fix navbar menu that doesn't collapse when an internal link is clicked.
@@ -65,72 +66,73 @@
     });
   </script>
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-	</button>
-	<a class="navbar-brand" href="#">John Blischak</a>
+        </button>
+        <a class="navbar-brand" href="#">John Blischak</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
-	<ul class="nav navbar-nav">
+        <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
-	  <li><a href="#software">Software</a></li>
+          <li><a href="#software">Software</a></li>
           <li><a href="#publications">Publications</a></li>
           <li><a href="#presentations">Presentations</a></li>
-	</ul>
-	<ul class="nav navbar-nav navbar-right">
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
           <li><a href="assets/cv-blischak.pdf"><span class="glyphicon glyphicon-download-alt"></span> CV</a></li>
-	</ul>
+        </ul>
       </div>
     </div>
-  </nav> 
+  </nav>
 
   <div class="container" style="margin-top:100px">
     <div class="row">
       <div class="col-sm-4">
         <img src="img/headshot-cropped.jpg" class="img-responsive img-rounded" style="display:inline" width="75%" alt="John Blischak">
-	<p style="font-size:32px">
-	  <a href="https://github.com/jdblischak"><i class="fab fa-github"></i></a>
-	  <a href="https://twitter.com/jdblischak"><i class="fab fa-twitter"></i></a>
-	  <a href="https://www.linkedin.com/in/jdblischak"><i class="fab fa-linkedin"></i></a>
-	</p>
+        <p style="font-size:32px">
+          <a href="https://github.com/jdblischak"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/jdblischak"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/jdblischak"><i class="fab fa-linkedin"></i></a>
+        </p>
       </div>
       <div class="col-sm-8">
-	<p style="font-size:20px">
-	  I am a postdoctoral researcher with
-	  <a href="http://stephenslab.uchicago.edu/">Professor Matthew Stephens</a>
-	  in the
-	  <a href="https://genes.uchicago.edu/">Department of Human Genetics</a>
-	  at the
-	  <a href="https://www.uchicago.edu/">University of Chicago</a>.
-	  Currently I am focusing on the following projects:
-	</p>
-	<ol style="font-size:20px">
-	  <li>
-	    develop software to facilitate open and reproducible computational
-	    research
-	  </li>
-	  <li>
-	    build bioinformatics pipelines to analyze single-cell RNA sequencing
-	    data
-	  </li>
-	  <li>
-	    teach scientists how to use software development tools like version
-	    control
-	  </li>
-	</ol>
+        <p style="font-size:20px">
+          I am a postdoctoral researcher with
+          <a href="http://stephenslab.uchicago.edu/">Professor Matthew Stephens</a>
+          in the
+          <a href="https://genes.uchicago.edu/">Department of Human Genetics</a>
+          at the
+          <a href="https://www.uchicago.edu/">University of Chicago</a>.
+          Currently I am focusing on the following projects:
+        </p>
+        <ol style="font-size:20px">
+          <li>
+            develop software to facilitate open and reproducible computational
+            research
+          </li>
+          <li>
+            build bioinformatics pipelines to analyze single-cell RNA sequencing
+            data
+          </li>
+          <li>
+            teach scientists how to use software development tools like version
+            control
+          </li>
+        </ol>
       </div>
     </div>
 
   </div>
 
-  
+
   <div id="software" class="container">
     <div class="page-header">
       <h1>Software</h1>
@@ -139,15 +141,15 @@
     <ul class="list-group">
       <li class="list-group-item">
         <h3><a href="https://jdblischak.github.io/workflowr">workflowr</a></h3>
-	<p>
-	  The workflowr R package combines R Markdown and version control (Git) to create a website containing time-stamped, versioned, and
-	  documented results.
-	</p>
-	<p>
-	  <a href="https://cran.r-project.org/package=workflowr" class="btn btn-primary" role="button">Release</a>
+        <p>
+          The workflowr R package combines R Markdown and version control (Git) to create a website containing time-stamped, versioned, and
+          documented results.
+        </p>
+        <p>
+          <a href="https://cran.r-project.org/package=workflowr" class="btn btn-primary" role="button">Release</a>
           <a href="https://github.com/jdblischak/workflowr" class="btn btn-primary" role="button">Source</a>
           <a href="https://www.youtube.com/watch?v=O1wv94sZfvE" class="btn btn-primary" role="button">Video</a>
-	</p>
+        </p>
       </li>
 
     </ul>
@@ -162,52 +164,52 @@
       <li class="list-group-item">
         <h3><a href="http://dx.doi.org/10.1038/s41598-017-05878-w">Predicting susceptibility to tuberculosis based on gene expression profiling in dendritic cells</a></h3>
         <h4>2017</h4>
-	<p>
+        <p>
           <strong>Blischak JD*</strong>, Tailleux L*, Myrthil M, Charlois C, Bergot E, Dinh A, Morizot G, Chény O, Platen CV, Herrmann JL, Brosch R, Barreiro LB, and Gilad Y
-	</p>
-	<p>
+        </p>
+        <p>
           <a href="https://www.ncbi.nlm.nih.gov/pubmed/28720766" class="btn btn-primary" role="button">PubMed</a>
           <a href="https://github.com/jdblischak/tb-suscept" class="btn btn-primary" role="button">Code</a>
           <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE94116" class="btn btn-primary" role="button">Data</a>
-	</p>
+        </p>
       </li>
-      
+
       <li class="list-group-item">
-	<h3><a href="http://dx.doi.org/10.1038/srep39921">Batch effects and the effective design of single-cell gene expression studies</a></h3>
-	<h4>2017</h4>
-	<p>
+        <h3><a href="http://dx.doi.org/10.1038/srep39921">Batch effects and the effective design of single-cell gene expression studies</a></h3>
+        <h4>2017</h4>
+        <p>
           Tung PY*, <strong>Blischak JD*</strong>, Hsiao CJ*, Knowles DA, Burnett JE, Pritchard JK, and Gilad Y
-	</p>
-	<p>
+        </p>
+        <p>
           <a href="https://www.ncbi.nlm.nih.gov/pubmed/28045081" class="btn btn-primary" role="button">PubMed</a>
           <a href="https://github.com/jdblischak/singleCellSeq" class="btn btn-primary" role="button">Code</a>
           <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE77288" class="btn btn-primary" role="button">Data</a>
-	</p>
+        </p>
       </li>
 
       <li class="list-group-item">
-	<h3><a href="http://dx.plos.org/10.1371/journal.pcbi.1004668">A quick introduction to version control with Git and GitHub</a></h3>
-	<h4>2016</h4>
-	<p>
-	  <strong>Blischak JD</strong>, Davenport ER, and Wilson G
-	</p>
-	<p>
+        <h3><a href="http://dx.plos.org/10.1371/journal.pcbi.1004668">A quick introduction to version control with Git and GitHub</a></h3>
+        <h4>2016</h4>
+        <p>
+          <strong>Blischak JD</strong>, Davenport ER, and Wilson G
+        </p>
+        <p>
           <a href="https://www.ncbi.nlm.nih.gov/pubmed/26785377" class="btn btn-primary" role="button">PubMed</a>
           <a href="https://github.com/jdblischak/git-for-science" class="btn btn-primary" role="button">Code</a>
-	</p>
+        </p>
       </li>
 
       <li class="list-group-item">
-	<h3><a href="https://doi.org/10.1038/srep16882">Mycobacterial infection induces a specific human innate immune response</a></h3>
-	<h4>2015</h4>
-	<p>
-	  <strong>Blischak JD</strong>, Tailleux L, Mitrano A, Barreiro LB, and Gilad Y
-	</p>
-	<p>
+        <h3><a href="https://doi.org/10.1038/srep16882">Mycobacterial infection induces a specific human innate immune response</a></h3>
+        <h4>2015</h4>
+        <p>
+          <strong>Blischak JD</strong>, Tailleux L, Mitrano A, Barreiro LB, and Gilad Y
+        </p>
+        <p>
           <a href="https://www.ncbi.nlm.nih.gov/pubmed/26586179" class="btn btn-primary" role="button">PubMed</a>
           <a href="https://bitbucket.org/jdblischak/tb/src" class="btn btn-primary" role="button">Code</a>
           <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE67427" class="btn btn-primary" role="button">Data</a>
-	</p>
+        </p>
       </li>
     </ul>
   </div>
@@ -221,35 +223,35 @@
       <li class="list-group-item">
         <h3><a href="https://user2018.r-project.org/">useR! 2018</a></h3>
         <h4>Brisbane, QLD</h4>
-	<h4>Jul 2018</h4>
-	<p>
-	  The workflowr R package: a framework for reproducible and collaborative data science
-	</p>
-	<p>
+        <h4>Jul 2018</h4>
+        <p>
+          The workflowr R package: a framework for reproducible and collaborative data science
+        </p>
+        <p>
           <a href="https://speakerdeck.com/jdblischak/the-workflowr-r-package-a-framework-for-reproducible-and-collaborative-data-science" class="btn btn-primary" role="button">Slides</a>
           <a href="https://www.youtube.com/watch?v=GrqM2VqIQ20&t" class="btn btn-primary" role="button">Video</a>
-	</p>
-      </li>
-      
-      <li class="list-group-item">
-	<h3><a href="https://www.meetup.com/Cleveland-UseR-Group/events/248265961/">Greater Cleveland R Group</a></h3>
-	<h4>Independence, OH</h4>
-	<h4>May 2018</h4>
-	<p>
-	  The workflowr R package: a framework for reproducible and collaborative data science
-	</p>
-	<p>
-          <a href="https://www.youtube.com/watch?v=YmRglD2oDbY" class="btn btn-primary" role="button">Video</a>
-	</p>
+        </p>
       </li>
 
       <li class="list-group-item">
-	<h3><a href="https://med.stanford.edu/dbds/education/workshop/abstract/jblischak_05102018.html">Workshop in Biostatistics</a></h3>
-	<h4>Stanford University, Stanford, CA</h4>
-	<h4>May 2018</h4>
-	<p>
-	  The workflowr R package: a framework for reproducible and collaborative data science
-	</p>
+        <h3><a href="https://www.meetup.com/Cleveland-UseR-Group/events/248265961/">Greater Cleveland R Group</a></h3>
+        <h4>Independence, OH</h4>
+        <h4>May 2018</h4>
+        <p>
+          The workflowr R package: a framework for reproducible and collaborative data science
+        </p>
+        <p>
+          <a href="https://www.youtube.com/watch?v=YmRglD2oDbY" class="btn btn-primary" role="button">Video</a>
+        </p>
+      </li>
+
+      <li class="list-group-item">
+        <h3><a href="https://med.stanford.edu/dbds/education/workshop/abstract/jblischak_05102018.html">Workshop in Biostatistics</a></h3>
+        <h4>Stanford University, Stanford, CA</h4>
+        <h4>May 2018</h4>
+        <p>
+          The workflowr R package: a framework for reproducible and collaborative data science
+        </p>
       </li>
 
     </ul>
