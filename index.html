@@ -57,12 +57,13 @@
     h1 {
       margin: 75px 0 0 0;
     }
-    #intro, #projects {
+    #intro, #projects, #publications, #presentations {
       height: 100vh;
+      margin-top: 100px;
     }
-    #projects img {
+    #projects img, #publications img {
       display: block;
-      height: 250px;
+      max-height: 250px;
       margin: 0 auto 10px auto;
     }
   </style>
@@ -176,6 +177,7 @@
             role="button">Video</a>
         </p>
       </div>
+      <!--
       <div class="col-sm-6 col-xs-12">
         <img src="https://assets.datacamp.com/production/course_6456/shields/original/shield_image_course_6456_20181011-13-httijz?1539256948"
           alt="DataCamp course logo for Differential Expression Analysis in R with limma">
@@ -192,6 +194,7 @@
             role="button">Source</a>
         </p>
       </div>
+          -->
     </div>
   </div>
 
@@ -201,8 +204,8 @@
           authorship)</small></h1>
     </div>
 
-    <ul class="list-group">
-      <li class="list-group-item">
+    <div class="row">
+      <div class="col-sm-6  col-xs-12">
         <h3><a href="http://dx.doi.org/10.1038/s41598-017-05878-w">Predicting
             susceptibility to tuberculosis based on gene expression profiling
             in dendritic cells</a></h3>
@@ -220,9 +223,11 @@
           <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE94116"
             class="btn btn-primary" role="button">Data</a>
         </p>
-      </li>
+        <img src="img/blischak-et-al-2017-fig-03a.png">
+     </div>
 
-      <li class="list-group-item">
+
+     <div class="col-sm-6  col-xs-12">
         <h3><a href="http://dx.doi.org/10.1038/srep39921">Batch effects and the
             effective design of single-cell gene expression studies</a></h3>
         <h4>2017</h4>
@@ -238,9 +243,12 @@
           <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE77288"
             class="btn btn-primary" role="button">Data</a>
         </p>
-      </li>
+        <img src="img/tung-et-al-2017-fig-s09a.png">
+    </div>
+    </div>
 
-      <li class="list-group-item">
+    <div class="row">
+      <div class="col-sm-6  col-xs-12">
         <h3><a href="http://dx.plos.org/10.1371/journal.pcbi.1004668">A quick
             introduction to version control with Git and GitHub</a></h3>
         <h4>2016</h4>
@@ -253,9 +261,10 @@
           <a href="https://github.com/jdblischak/git-for-science" class="btn btn-primary"
             role="button">Code</a>
         </p>
-      </li>
+        <img src="https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1004668.g002">
+      </div>
 
-      <li class="list-group-item">
+      <div class="col-sm-6  col-xs-12">
         <h3><a href="https://doi.org/10.1038/srep16882">Mycobacterial infection
             induces a specific human innate immune response</a></h3>
         <h4>2015</h4>
@@ -271,8 +280,9 @@
           <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE67427"
             class="btn btn-primary" role="button">Data</a>
         </p>
-      </li>
-    </ul>
+        <img src="img/blischak-et-al-2015-fig-03a.png">
+     </div>
+    </div>
   </div>
 
   <div id="presentations" class="container">
@@ -280,50 +290,31 @@
       <h1>Selected presentations</h1>
     </div>
 
-    <ul class="list-group">
-
-      <li class="list-group-item">
-        <h3><a href="https://www.meetup.com/Cleveland-UseR-Group/events/255967910/">Greater
-            Cleveland R Group</a></h3>
+    <div class="row">
+      <div class="col-sm-6  col-xs-12">
+        <h3>Introduction to the conda package manager for R users</h3>
+        <h4><a href="https://www.meetup.com/Cleveland-UseR-Group/events/255967910/">Greater
+            Cleveland R Group</a></h4>
         <h4>Independence, OH</h4>
         <h4>Dec 2018</h4>
-        <p>
-	  Introduction to the conda package manager for R users
-        </p>
-        <p>
-          <a href="https://www.youtube.com/watch?v=ag25635lQQU" class="btn btn-primary"
-            role="button">Video</a>
-        </p>
-      </li>
-
-      <li class="list-group-item">
-        <h3><a href="https://user2018.r-project.org/">useR! 2018</a></h3>
+        <iframe src="https://www.youtube-nocookie.com/embed/ag25635lQQU"
+          style="margin: auto; display: block;"
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="col-sm-6  col-xs-12">
+        <h3>The workflowr R package: a framework for reproducible and
+          collaborative data science</h3>
+        <h4><a href="https://user2018.r-project.org/">useR! 2018</a></h4>
         <h4>Brisbane, QLD</h4>
         <h4>Jul 2018</h4>
-        <p>
-          The workflowr R package: a framework for reproducible and
-          collaborative data science
-        </p>
-        <p>
-          <a href="https://speakerdeck.com/jdblischak/the-workflowr-r-package-a-framework-for-reproducible-and-collaborative-data-science"
-            class="btn btn-primary" role="button">Slides</a>
-          <a href="https://www.youtube.com/watch?v=GrqM2VqIQ20&t" class="btn btn-primary"
-            role="button">Video</a>
-        </p>
-      </li>
+        <iframe src="https://www.youtube-nocookie.com/embed/GrqM2VqIQ20"
+          style="margin: auto; display: block;"
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
 
-      <li class="list-group-item">
-        <h3><a href="https://med.stanford.edu/dbds/education/workshop/abstract/jblischak_05102018.html">Workshop
-            in Biostatistics</a></h3>
-        <h4>Stanford University, Stanford, CA</h4>
-        <h4>May 2018</h4>
-        <p>
-          The workflowr R package: a framework for reproducible and
-          collaborative data science
-        </p>
-      </li>
-
-    </ul>
   </div>
 
   <footer class="container-fluid text-center">
@@ -331,8 +322,7 @@
       &copy; 2018 John Blischak
     </p>
     <p>
-      Written with <a href="https://getbootstrap.com/docs/3.3/">Boostrap 3</a>
-      following the tutorial by <a href="https://www.w3schools.com">www.w3schools.com</a>.
+      Written with <a href="https://getbootstrap.com/docs/3.3/">Boostrap 3</a>.
       Hosted by <a href="https://pages.github.com/">GitHub Pages</a>.
     </p>
   </footer>
