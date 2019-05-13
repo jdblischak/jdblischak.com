@@ -25,6 +25,7 @@ a:hover {
 footer {
   padding-top: 35px;
   padding-bottom: 35px;
+  margin-top: 50px;
   /* Match the colors in the default .navbar-inverse class */
   /* https://github.com/twbs/bootstrap/blob/v3.3.7/dist/css/bootstrap.css#L4591 */
   background-color: #222;
@@ -46,21 +47,8 @@ h1 {
 }
 
 
-#intro, #projects, #publications, #presentations {
-  height: 100vh;
-  margin-top: 100px;
-}
-
-
 #projects img, #publications img {
   display: block;
   max-height: 250px;
   margin: 0 auto 10px auto;
-}
-
-
-@media only screen and (max-width: 768px) {
-  footer {
-margin-top: 1500px;
-  }
 }
