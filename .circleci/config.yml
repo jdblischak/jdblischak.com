@@ -27,7 +27,7 @@ jobs:
           command: make build
       - add_ssh_keys:
           fingerprints:
-            - "47:d6:f4:89:a3:9c:bf:b8:e2:0f:ff:5e:cb:4a:95:cb"
+            - "3e:63:7c:f7:de:49:df:90:36:91:9b:83:7c:58:37:45"
       - run:
           name: Deploy site to GitHub Pages
           command: |
