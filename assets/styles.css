@@ -1,0 +1,103 @@
+body {
+  font-family: 'Zilla Slab', serif;
+}
+
+/* _page.html */
+.navbar {
+  font-size: 16px;
+  background-color: #543a54;
+  border-bottom-color:  #543a54;
+}
+
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: #543a54;
+}
+
+a {
+  color: inherit;
+}
+
+/* Hover text in links is purple */
+a:hover {
+  color: #543a54;
+}
+
+/* index.html */
+#mission {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+#headshot {
+  display: block;
+  margin: 0 auto;
+  max-width: 25em;
+  margin-top: 2em;
+}
+
+
+#intro a {
+  text-decoration: underline;
+}
+
+.btn-primary {
+  background-color: #543a54;
+  border-color: #543a54;
+  margin: 2px;
+}
+
+.btn .btn-primary a {
+  text-decoration: none;
+}
+
+/* Hover background color for button is purple */
+.btn-primary:hover {
+  color: #543a54;
+  background-color: white;
+  border-color: #543a54;
+}
+
+
+/* Add some padding around the footer */
+footer {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  margin-top: 50px;
+  /* Match the colors in the default .navbar-inverse class */
+  /* https://github.com/twbs/bootstrap/blob/v3.3.7/dist/css/bootstrap.css#L4591 */
+  background-color: #543a54;
+  border-color: #080808;
+  color: #9d9d9d;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+
+p {
+  font-size: 16px;
+}
+
+
+intro {font-size: 32px;}
+
+
+h1 {
+  margin: 75px 0 0 0;
+}
+
+
+#projects img, #publications img {
+  display: block;
+  max-height: 250px;
+  margin: 0 auto 10px auto;
+}

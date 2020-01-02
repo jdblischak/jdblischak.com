@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blischak - Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/brands.css"
+        integrity="sha384-VGCZwiSnlHXYDojsRqeMn3IVvdzTx5JEuHgqZ3bYLCLUBV8rvihHApoA1Aso2TZA" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/fontawesome.css"
+        integrity="sha384-GVa9GOgVQgOk+TNYXu7S/InPTfSDTtBalSgkgqQ7sCik56N9ztlkoTr2f/T44oKV" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://code.cdn.mozilla.net/fonts/zilla-slab.css" rel="stylesheet">
+
+    <!-- Fix navbar menu that doesn't collapse when an internal link is clicked.
+       https://github.com/twbs/bootstrap/issues/9013#issuecomment-22059510
+       https://github.com/twbs/bootstrap/issues/12852
+       Used the following solution:
+       https://github.com/twbs/bootstrap/issues/9013#issuecomment-23590508
+  -->
+    <script>
+        $(document).on('click', '.navbar-collapse.in', function (e) {
+            if ($(e.target).is('a')) {
+                $(this).collapse('hide');
+            }
+        });
+    </script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">John Blischak</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="presentations.html">Presentations</a></li>
+                            <li><a href="publications.html">Publications</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://blog.jdblischak.com/">Blog</a></li>
+                    <li><a href="assets/cv-blischak.pdf"><span class="glyphicon glyphicon-download-alt"></span>
+                            CV</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+<div id="projects" class="container">
+  <div class="page-header">
+    <h1>Projects</h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-xs-12">
+      <img src="https://raw.githubusercontent.com/workflowr/workflowr-assets/master/img/hex-workflowr.png"
+        alt="workflowr hex sticker">
+      <p>
+        The workflowr R package combines R Markdown and version control (Git)
+        to create a website containing time-stamped, versioned, and
+        documented
+        results.
+      </p>
+      <p>
+        <a href="https://cran.r-project.org/package=workflowr" class="btn btn-primary"
+          role="button">Release</a>
+        <a href="https://github.com/jdblischak/workflowr" class="btn btn-primary"
+          role="button">Source</a>
+        <a href="https://www.youtube.com/watch?v=O1wv94sZfvE" class="btn btn-primary"
+          role="button">Video</a>
+      </p>
+    </div>
+    <!--
+    <div class="col-sm-6 col-xs-12">
+      <img src="https://assets.datacamp.com/production/course_6456/shields/original/shield_image_course_6456_20181011-13-httijz?1539256948"
+        alt="DataCamp course logo for Differential Expression Analysis in R with limma">
+      <p>
+        I created the DataCamp course "Differential Expression Analysis in R
+        with limma" that teaches how to use the versatile R/Bioconductor
+        package limma to perform a differential expression analysis on the
+        most common experimental designs.
+      </p>
+      <p>
+        <a href="https://www.datacamp.com/courses/differential-expression-analysis-in-r-with-limma"
+          class="btn btn-primary" role="button">DataCamp</a>
+        <a href="https://jdblischak.github.io/dc-bioc-limma/" class="btn btn-primary"
+          role="button">Source</a>
+      </p>
+    </div>
+        -->
+  </div>
+</div>
+
+
+    <footer class="container-fluid text-center">
+        <p>
+            &copy; 2018 John Blischak
+        </p>
+        <p>
+            Written with <a href="https://getbootstrap.com/docs/3.3/">Boostrap 3</a>.
+            Hosted by <a href="https://pages.github.com/">GitHub Pages</a>.
+        </p>
+    </footer>
+
+</body>
+
+</html>
