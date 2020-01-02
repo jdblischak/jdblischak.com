@@ -34,6 +34,8 @@ jobs:
             if [[ "${CI}" = "true" && "${CIRCLECI}" = "true" && "${CIRCLE_USERNAME}" = "jdblischak" && -z "${CIRCLE_PULL_REQUEST}" && -d _site/ ]]
             then
               echo "Deploying to GitHub Pages"
+              git config --global user.email "jdblischak@gmail.com"
+              git config --global user.name "CircleCI Job"
               git checkout gh-pages
               cp -R _site/* .
               git add *html assets/ img/
