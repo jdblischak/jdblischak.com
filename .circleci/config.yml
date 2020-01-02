@@ -1,6 +1,9 @@
 version: 2
 jobs:
   build:
+    branches:
+      only:
+        - jinja
     docker:
       - image: continuumio/miniconda3:4.7.12
     steps:
@@ -22,5 +25,14 @@ jobs:
       - run:
           name: Build site
           command: make build
+      - run:
+          name: Deploy site to GitHub Pages
+          command: |
+            if [[ "${CI}" = "true" && "${CIRCLECI}" = "true" && "${CIRCLE_USERNAME}" = "jdblischak" && -z "${CIRCLE_PULL_REQUEST}" && -d _site/ ]]
+            then
+              echo "I would deploy to GitHub Pages"
+            else
+              echo "I would NOT deploy to GitHub Pages"
+            fi
       - store_artifacts:
           path: _site/
