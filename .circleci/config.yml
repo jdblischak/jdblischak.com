@@ -25,14 +25,22 @@ jobs:
       - run:
           name: Build site
           command: make build
+      - add_ssh_keys:
+          fingerprints:
+            - "47:d6:f4:89:a3:9c:bf:b8:e2:0f:ff:5e:cb:4a:95:cb"
       - run:
           name: Deploy site to GitHub Pages
           command: |
             if [[ "${CI}" = "true" && "${CIRCLECI}" = "true" && "${CIRCLE_USERNAME}" = "jdblischak" && -z "${CIRCLE_PULL_REQUEST}" && -d _site/ ]]
             then
-              echo "I would deploy to GitHub Pages"
+              echo "Deploying to GitHub Pages"
+              git checkout gh-pages
+              cp -R _site/* .
+              git add *html assets/ img/
+              git commit -m "Site built from ${CIRCLE_SHA1} on `date --rfc-3339=s` [skip ci]"
+              git push origin gh-pages
             else
-              echo "I would NOT deploy to GitHub Pages"
+              echo "The site was not deployed"
             fi
       - store_artifacts:
           path: _site/
