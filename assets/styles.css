@@ -4,7 +4,7 @@ body {
 
 /* _page.html */
 .navbar {
-  font-size: 16px;
+  font-size: 2rem;
   background-color: #543a54;
   border-bottom-color:  #543a54;
 }
@@ -27,16 +27,16 @@ a:hover {
 
 /* index.html */
 #mission {
-  font-size: 2.5em;
+  font-size: 4rem;
   text-align: center;
-  margin: 1.5em 0;
+  margin: 1.5rem 0;
 }
 
 #headshot {
   display: block;
   margin: 0 auto;
-  max-width: 25em;
-  margin-top: 2em;
+  max-width: 25rem;
+  margin-top: 2rem;
 }
 
 
@@ -72,6 +72,7 @@ footer {
   background-color: #543a54;
   border-color: #080808;
   color: #9d9d9d;
+  font-size: 1.5rem;
 }
 
 footer a {
@@ -82,14 +83,9 @@ footer a:hover {
   color: #fff;
 }
 
-
 p {
-  font-size: 16px;
+  font-size: 1.5rem;
 }
-
-
-intro {font-size: 32px;}
-
 
 h1 {
   margin: 75px 0 0 0;
