@@ -3,6 +3,11 @@ body {
 }
 
 /* _page.html */
+#main {
+  min-height: 100vh;
+  border-bottom: 1rem solid #543a54;
+}
+
 .navbar {
   font-size: 2rem;
   background-color: #543a54;
@@ -29,7 +34,7 @@ a:hover {
 #mission {
   font-size: 4rem;
   text-align: center;
-  margin: 1.5rem 0;
+  margin: 75px 0;
 }
 
 #headshot {
@@ -66,7 +71,6 @@ a:hover {
 footer {
   padding-top: 35px;
   padding-bottom: 35px;
-  margin-top: 50px;
   /* Match the colors in the default .navbar-inverse class */
   /* https://github.com/twbs/bootstrap/blob/v3.3.7/dist/css/bootstrap.css#L4591 */
   background-color: #543a54;
