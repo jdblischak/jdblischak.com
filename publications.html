@@ -2,168 +2,162 @@
 <html lang="en">
 
 <head>
-    <title>Blischak - Publications</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/brands.css"
-        integrity="sha384-VGCZwiSnlHXYDojsRqeMn3IVvdzTx5JEuHgqZ3bYLCLUBV8rvihHApoA1Aso2TZA" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/fontawesome.css"
-        integrity="sha384-GVa9GOgVQgOk+TNYXu7S/InPTfSDTtBalSgkgqQ7sCik56N9ztlkoTr2f/T44oKV" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/styles.css">
-    <link href="https://code.cdn.mozilla.net/fonts/zilla-slab.css" rel="stylesheet">
+  <title>Blischak - Publications</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/brands.css"
+    integrity="sha384-VGCZwiSnlHXYDojsRqeMn3IVvdzTx5JEuHgqZ3bYLCLUBV8rvihHApoA1Aso2TZA" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/fontawesome.css"
+    integrity="sha384-GVa9GOgVQgOk+TNYXu7S/InPTfSDTtBalSgkgqQ7sCik56N9ztlkoTr2f/T44oKV" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link href="https://code.cdn.mozilla.net/fonts/zilla-slab.css" rel="stylesheet">
 
-    <!-- Fix navbar menu that doesn't collapse when an internal link is clicked.
+  <!-- Fix navbar menu that doesn't collapse when an internal link is clicked.
        https://github.com/twbs/bootstrap/issues/9013#issuecomment-22059510
        https://github.com/twbs/bootstrap/issues/12852
        Used the following solution:
        https://github.com/twbs/bootstrap/issues/9013#issuecomment-23590508
   -->
-    <script>
-        $(document).on('click', '.navbar-collapse.in', function (e) {
-            if ($(e.target).is('a')) {
-                $(this).collapse('hide');
-            }
-        });
-    </script>
+  <script>
+    $(document).on('click', '.navbar-collapse.in', function (e) {
+      if ($(e.target).is('a')) {
+        $(this).collapse('hide');
+      }
+    });
+  </script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <div id="main">
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-          <div class="container-fluid">
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="index.html">John Blischak</a>
-              </div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                  <ul class="nav navbar-nav">
-                      <li class="dropdown">
-                          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources
-                              <span class="caret"></span></a>
-                          <ul class="dropdown-menu">
-                              <li><a href="projects.html">Projects</a></li>
-                              <li><a href="presentations.html">Presentations</a></li>
-                              <li><a href="publications.html">Publications</a></li>
-                          </ul>
-                      </li>
-                  </ul>
-                  <ul class="nav navbar-nav navbar-right">
-                      <li><a href="https://blog.jdblischak.com/">Blog</a></li>
-                      <li><a href="assets/cv-blischak.pdf"><span class="glyphicon glyphicon-download-alt"></span>
-                              CV</a></li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
-
-      
-<div id="publications" class="container">
-    <div class="page-header">
-      <h1>Selected publications <small>(<strong>*</strong> denotes equal
-          authorship)</small></h1>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-6  col-xs-12">
-        <h3><a href="http://dx.doi.org/10.1038/s41598-017-05878-w">Predicting
-            susceptibility to tuberculosis based on gene expression profiling
-            in dendritic cells</a></h3>
-        <h4>2017</h4>
-        <p>
-          <strong>Blischak JD*</strong>, Tailleux L*, Myrthil M, Charlois C,
-          Bergot E, Dinh A, Morizot G, Chény O, Platen CV, Herrmann JL, Brosch
-          R, Barreiro LB, and Gilad Y
-        </p>
-        <p>
-          <a href="https://www.ncbi.nlm.nih.gov/pubmed/28720766" class="btn btn-primary"
-            role="button">PubMed</a>
-          <a href="https://github.com/jdblischak/tb-suscept" class="btn btn-primary"
-            role="button">Code</a>
-          <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE94116"
-            class="btn btn-primary" role="button">Data</a>
-        </p>
-        <img src="img/blischak-et-al-2017-fig-03a.png">
-     </div>
-
-
-     <div class="col-sm-6  col-xs-12">
-        <h3><a href="http://dx.doi.org/10.1038/srep39921">Batch effects and the
-            effective design of single-cell gene expression studies</a></h3>
-        <h4>2017</h4>
-        <p>
-          Tung PY*, <strong>Blischak JD*</strong>, Hsiao CJ*, Knowles DA,
-          Burnett JE, Pritchard JK, and Gilad Y
-        </p>
-        <p>
-          <a href="https://www.ncbi.nlm.nih.gov/pubmed/28045081" class="btn btn-primary"
-            role="button">PubMed</a>
-          <a href="https://github.com/jdblischak/singleCellSeq" class="btn btn-primary"
-            role="button">Code</a>
-          <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE77288"
-            class="btn btn-primary" role="button">Data</a>
-        </p>
-        <img src="img/tung-et-al-2017-fig-s09a.png">
-    </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-6  col-xs-12">
-        <h3><a href="http://dx.plos.org/10.1371/journal.pcbi.1004668">A quick
-            introduction to version control with Git and GitHub</a></h3>
-        <h4>2016</h4>
-        <p>
-          <strong>Blischak JD</strong>, Davenport ER, and Wilson G
-        </p>
-        <p>
-          <a href="https://www.ncbi.nlm.nih.gov/pubmed/26785377" class="btn btn-primary"
-            role="button">PubMed</a>
-          <a href="https://github.com/jdblischak/git-for-science" class="btn btn-primary"
-            role="button">Code</a>
-        </p>
-        <img src="https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1004668.g002">
+  <header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">John Blischak</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resources
+                <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="presentations.html">Presentations</a></li>
+                <li><a href="publications.html">Publications</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://blog.jdblischak.com/">Blog</a></li>
+            <li><a href="assets/cv-blischak.pdf"><span class="glyphicon glyphicon-download-alt"></span>
+                CV</a></li>
+          </ul>
+        </div>
       </div>
+    </nav>
+  </header>
 
-      <div class="col-sm-6  col-xs-12">
-        <h3><a href="https://doi.org/10.1038/srep16882">Mycobacterial infection
-            induces a specific human innate immune response</a></h3>
-        <h4>2015</h4>
-        <p>
-          <strong>Blischak JD</strong>, Tailleux L, Mitrano A, Barreiro LB, and
-          Gilad Y
-        </p>
-        <p>
-          <a href="https://www.ncbi.nlm.nih.gov/pubmed/26586179" class="btn btn-primary"
-            role="button">PubMed</a>
-          <a href="https://bitbucket.org/jdblischak/tb/src" class="btn btn-primary"
-            role="button">Code</a>
-          <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE67427"
-            class="btn btn-primary" role="button">Data</a>
-        </p>
-        <img src="img/blischak-et-al-2015-fig-03a.png">
-     </div>
+  <main>
+    
+<div id="publications" class="container">
+  <div class="page-header">
+    <h1>Selected publications <small>(<strong>*</strong> denotes equal
+        authorship)</small></h1>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6  col-xs-12">
+      <h3><a href="http://dx.doi.org/10.1038/s41598-017-05878-w">Predicting
+          susceptibility to tuberculosis based on gene expression profiling
+          in dendritic cells</a></h3>
+      <h4>2017</h4>
+      <p>
+        <strong>Blischak JD*</strong>, Tailleux L*, Myrthil M, Charlois C,
+        Bergot E, Dinh A, Morizot G, Chény O, Platen CV, Herrmann JL, Brosch
+        R, Barreiro LB, and Gilad Y
+      </p>
+      <p>
+        <a href="https://www.ncbi.nlm.nih.gov/pubmed/28720766" class="btn btn-primary" role="button">PubMed</a>
+        <a href="https://github.com/jdblischak/tb-suscept" class="btn btn-primary" role="button">Code</a>
+        <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE94116" class="btn btn-primary"
+          role="button">Data</a>
+      </p>
+      <img src="img/blischak-et-al-2017-fig-03a.png">
+    </div>
+
+
+    <div class="col-sm-6  col-xs-12">
+      <h3><a href="http://dx.doi.org/10.1038/srep39921">Batch effects and the
+          effective design of single-cell gene expression studies</a></h3>
+      <h4>2017</h4>
+      <p>
+        Tung PY*, <strong>Blischak JD*</strong>, Hsiao CJ*, Knowles DA,
+        Burnett JE, Pritchard JK, and Gilad Y
+      </p>
+      <p>
+        <a href="https://www.ncbi.nlm.nih.gov/pubmed/28045081" class="btn btn-primary" role="button">PubMed</a>
+        <a href="https://github.com/jdblischak/singleCellSeq" class="btn btn-primary" role="button">Code</a>
+        <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE77288" class="btn btn-primary"
+          role="button">Data</a>
+      </p>
+      <img src="img/tung-et-al-2017-fig-s09a.png">
     </div>
   </div>
 
+  <div class="row">
+    <div class="col-sm-6  col-xs-12">
+      <h3><a href="http://dx.plos.org/10.1371/journal.pcbi.1004668">A quick
+          introduction to version control with Git and GitHub</a></h3>
+      <h4>2016</h4>
+      <p>
+        <strong>Blischak JD</strong>, Davenport ER, and Wilson G
+      </p>
+      <p>
+        <a href="https://www.ncbi.nlm.nih.gov/pubmed/26785377" class="btn btn-primary" role="button">PubMed</a>
+        <a href="https://github.com/jdblischak/git-for-science" class="btn btn-primary" role="button">Code</a>
+      </p>
+      <img
+        src="https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1004668.g002">
+    </div>
 
-    </div> <!-- main -->
+    <div class="col-sm-6  col-xs-12">
+      <h3><a href="https://doi.org/10.1038/srep16882">Mycobacterial infection
+          induces a specific human innate immune response</a></h3>
+      <h4>2015</h4>
+      <p>
+        <strong>Blischak JD</strong>, Tailleux L, Mitrano A, Barreiro LB, and
+        Gilad Y
+      </p>
+      <p>
+        <a href="https://www.ncbi.nlm.nih.gov/pubmed/26586179" class="btn btn-primary" role="button">PubMed</a>
+        <a href="https://bitbucket.org/jdblischak/tb/src" class="btn btn-primary" role="button">Code</a>
+        <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE67427" class="btn btn-primary"
+          role="button">Data</a>
+      </p>
+      <img src="img/blischak-et-al-2015-fig-03a.png">
+    </div>
+  </div>
+</div>
 
-    <footer class="container-fluid text-center">
-        <p>
-            &copy; 2018 John Blischak
-        </p>
-        <p>
-            Written with <a href="https://getbootstrap.com/docs/3.3/">Boostrap 3</a>.
-            Hosted by <a href="https://pages.github.com/">GitHub Pages</a>.
-        </p>
-    </footer>
+  </main>
+
+  <footer class="container-fluid text-center">
+    <p>
+      &copy; 2018 John Blischak
+    </p>
+    <p>
+      Written with <a href="https://getbootstrap.com/docs/3.3/">Boostrap 3</a>.
+      Hosted by <a href="https://pages.github.com/">GitHub Pages</a>.
+    </p>
+  </footer>
 
 </body>
 

@@ -3,7 +3,7 @@ body {
 }
 
 /* _page.html */
-#main {
+main {
   min-height: 100vh;
   border-bottom: 1rem solid #543a54;
 }
@@ -18,10 +18,6 @@ body {
 .navbar-inverse .navbar-brand {
   color: rgba(255, 255, 255, 0.8);
 }
-
-
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover
-
 
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:focus,
