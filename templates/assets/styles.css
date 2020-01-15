@@ -4,7 +4,7 @@ body {
 
 /* _page.html */
 main {
-  min-height: 100vh;
+  min-height: 90vh;
   border-bottom: 1rem solid #543a54;
 }
 
@@ -42,16 +42,14 @@ a:hover {
 #mission {
   font-size: 4rem;
   text-align: center;
-  margin: 75px 0;
+  margin: 2rem 0;
 }
 
 #headshot {
   display: block;
-  margin: 0 auto;
+  margin: 2rem auto;
   max-width: 25rem;
-  margin-top: 2rem;
 }
-
 
 #intro a {
   text-decoration: underline;
@@ -98,11 +96,6 @@ footer a:hover {
 p {
   font-size: 1.5rem;
 }
-
-h1 {
-  margin: 75px 0 0 0;
-}
-
 
 #projects img, #publications img {
   display: block;
