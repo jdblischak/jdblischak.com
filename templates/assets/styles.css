@@ -3,7 +3,7 @@ body {
 }
 
 /* _page.html */
-#main {
+main {
   min-height: 100vh;
   border-bottom: 1rem solid #543a54;
 }
