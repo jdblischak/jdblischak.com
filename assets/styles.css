@@ -102,3 +102,7 @@ p {
   max-height: 250px;
   margin: 0 auto 10px auto;
 }
+
+#publications .row {
+  margin-bottom: 10rem
+}
