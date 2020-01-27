@@ -103,6 +103,14 @@ p {
   margin: 0 auto 10px auto;
 }
 
-#publications .row {
-  margin-bottom: 10rem
+#publications .row,
+#presentations .row {
+  margin-bottom: 10rem;
+}
+
+#presentations iframe {
+  margin: auto;
+  display: block;
+  width: 100%;
+  height: 30rem;
 }
