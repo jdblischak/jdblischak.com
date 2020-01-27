@@ -85,12 +85,15 @@ footer {
   /* https://github.com/twbs/bootstrap/blob/v3.3.7/dist/css/bootstrap.css#L4591 */
   background-color: #543a54;
   border-color: #080808;
-  color: #9d9d9d;
-  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 footer a {
   text-decoration: underline;
+}
+
+footer p, footer a {
+  font-size: 1.5rem;
 }
 
 footer a:hover {
