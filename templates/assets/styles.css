@@ -93,11 +93,11 @@ footer a:hover {
   color: #fff;
 }
 
-p {
-  font-size: 1.5rem;
+p, li, a {
+  font-size: 2rem;
 }
 
-#projects img, #publications img {
+#workflowr img, #publications img {
   display: block;
   max-height: 250px;
   margin: 0 auto 10px auto;

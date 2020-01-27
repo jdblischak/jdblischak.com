@@ -1,0 +1,56 @@
+{% extends "_page.html" %}
+
+{% block title %}Blischak - workflowr{% endblock %}
+
+{% block content %}
+<div id="workflowr" class="container">
+  <div class="page-header">
+    <h1>Reproducible research with workflowr</h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-xs-12">
+      <p>
+        The workflowr R package combines R Markdown and version control (Git)
+        to create a website containing time-stamped, versioned, and
+        documented
+        results.
+      </p>
+      <p>
+        <a href="https://cran.r-project.org/package=workflowr" class="btn btn-primary" role="button">Release</a>
+        <a href="https://github.com/jdblischak/workflowr" class="btn btn-primary" role="button">Source</a>
+        <a href="https://www.youtube.com/watch?v=O1wv94sZfvE" class="btn btn-primary" role="button">Video</a>
+      </p>
+    </div>
+    <div class="col-sm-6 col-xs-12">
+      <img src="https://raw.githubusercontent.com/workflowr/workflowr-assets/master/img/hex-workflowr.png"
+        alt="workflowr hex sticker">
+    </div>
+  </div>
+  <h2>Features</h2>
+  <ul>
+    <li>Organized
+      <ul>
+        <li>Provides a project template with organized subdirectories</li>
+        <li>Mixes code and results with R Markdown</li>
+        <li>Uses Git to version both source code and results</li>
+      </ul>
+    </li>
+    <li>Reproducible
+      <ul>
+        <li>Displays the code version used to create each result</li>
+        <li>Runs each analysis in an isolated R session</li>
+        <li>Records the session information of each analysis</li>
+        <li>Sets the same seed for random number generation for each analysis</li>
+      </ul>
+    </li>
+    <li>Shareable
+      <ul>
+        <li>Creates a website to present your research results</li>
+        <li>Documents how to host your website for free via <a href="https://pages.github.com/">GitHub Pages</a> or
+          <a href="https://about.gitlab.com/product/pages/" rel="nofollow">GitLab Pages</a></li>
+        <li>Creates links to past versions of results</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+{% endblock %}
