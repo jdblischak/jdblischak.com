@@ -7,6 +7,9 @@ jobs:
     docker:
       - image: condaforge/mambaforge:4.10.3-1
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "bc:08:16:e4:f1:e1:df:f3:5e:ab:0c:bc:9a:c9:1c:91"
       - checkout
       - run:
           name: Configure conda
@@ -23,9 +26,6 @@ jobs:
       - run:
           name: Build site
           command: make build
-      - add_ssh_keys:
-          fingerprints:
-            - "bc:08:16:e4:f1:e1:df:f3:5e:ab:0c:bc:9a:c9:1c:91"
       - run:
           name: Deploy site to GitHub Pages
           command: |
