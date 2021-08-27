@@ -5,7 +5,7 @@ jobs:
       only:
         - main
     docker:
-      - image: continuumio/miniconda3:4.7.12
+      - image: condaforge/mambaforge:4.10.3-1
     steps:
       - checkout
       - run:
@@ -15,12 +15,10 @@ jobs:
             conda config --set quiet yes
             conda config --set changeps1 no
             conda config --set auto_update_conda no
-            conda config --add channels defaults
-            conda config --add channels conda-forge
       - run:
           name: Installation
           command: |
-            conda install git make staticjinja
+            mamba install git make staticjinja
             conda list
       - run:
           name: Build site
