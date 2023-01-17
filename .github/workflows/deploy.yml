@@ -1,0 +1,43 @@
+name: Deploy website
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'templates/**'
+      - 'Makefile'
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    defaults:
+      run:
+        shell: bash -l {0}
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install Conda environment
+      uses: mamba-org/provision-with-micromamba@main
+      with:
+        environment-file: false
+        environment-name: deploy
+        extra-specs: |
+          git
+          make
+          staticjinja
+        channels: conda-forge
+    - name: Build site
+      run: make build
+    - name: Deploy site to GitHub Pages
+      if: github.repository_owner == 'jdblischak' && github.event_name != 'pull_request'
+      run: |
+        echo "Deploying to GitHub Pages"
+        git config user.name "GitHub Actions"
+        git config user.email "runneradmin@users.noreply.github.com"
+        git fetch origin
+        git checkout gh-pages
+        cp -R _site/* .
+        git add *html assets/ img/
+        git commit --allow-empty -m "Site built from ${GITHUB_REF} on `date --rfc-3339=s` [skip ci]"
+        git push origin gh-pages
