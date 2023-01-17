@@ -39,5 +39,5 @@ jobs:
         git checkout gh-pages
         cp -R _site/* .
         git add *html assets/ img/
-        git commit --allow-empty -m "Site built from ${GITHUB_REF} on `date --rfc-3339=s` [skip ci]"
+        git commit --allow-empty -m "Site built from ${GITHUB_SHA} on `date --rfc-3339=s` [skip ci]"
         git push origin gh-pages
